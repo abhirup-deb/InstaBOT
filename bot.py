@@ -1,6 +1,7 @@
 from selenium import webdriver
 import os
 import time
+import configparser
 
 class InstagramBot :
 
@@ -36,8 +37,19 @@ class InstagramBot :
         self.driver.get('{}/{}/'.format(self.base_url,user))
 
 
+    def follow_user(self,user):
+        self.nav_user(user)
+        follow_button = self.driver.find_elements_by_xpath("//button[contains(text(), 'Follow')]")[0]
+        follow_button.click()
+
 
 if __name__ == '__main__' :
-    ig_bot = InstagramBot('temp_username','temp_password')
-    ig_bot.nav_user('abhirup_deb')
-    
+    config_path = './config.ini'
+    cparser = configparser.ConfigParser()
+    cparser.read(config_path)
+    username = cparser['AUTH']['USERNAME']
+    password = cparser['AUTH']['PASSWORD']
+
+    ig_bot = InstagramBot('username','password')
+    #ig_bot.nav_user('abhirup_deb')
+    ig_bot.follow_user('abhirup_deb')
