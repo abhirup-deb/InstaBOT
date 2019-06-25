@@ -115,7 +115,7 @@ class InstaBot:
     @insta_method
     def download_user_images(self, user):
         """
-        Downloads all images from a users profile.
+        Downloads all images from a user profile.
         """
 
         self.nav_user(user)
