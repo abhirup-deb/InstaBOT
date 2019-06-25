@@ -8,4 +8,4 @@
   - Likes a number of a users latest posts, specified by n_posts or Unlikes them.
   - Creates a folder named after a user to to store the image, then downloads the image to the folder.
   - Scrolls to the bottom of a users page to load all of their media
-  - Finds buttons for following and unfollowing users by filtering follow elements for buttons. Defaults to finding follow buttons.        
+       
