@@ -1,4 +1,4 @@
-"""
+
   Features for the InstaBot
   - Searches for posts with Specific tags
   - Navigates to a user Profile Page
@@ -9,5 +9,3 @@
   - Creates a folder named after a user to to store the image, then downloads the image to the folder.
   - Scrolls to the bottom of a users page to load all of their media
   - Finds buttons for following and unfollowing users by filtering follow elements for buttons. Defaults to finding follow buttons.        
-
-"""
